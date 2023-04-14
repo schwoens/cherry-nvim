@@ -1,5 +1,5 @@
 local M = {}
-local theme = require('cherry-theme.theme')
+local theme = require('cherry-nvim.theme')
 
 M.setup = function()
   vim.cmd('hi clear')
@@ -10,7 +10,7 @@ M.setup = function()
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = 'cherry-theme'
+  vim.g.colors_name = 'cherry-nvim'
 
   theme.set_highlights()
 end
